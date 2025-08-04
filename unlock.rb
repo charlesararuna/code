@@ -34,7 +34,7 @@ begin
     'BRAND_NAME'            => 'Blue7',
     'TERMS_URL'             => 'https://blue7.com.br/termo-de-uso/',
     'PRIVACY_URL'           => 'https://blue7.com.br/politica-de-privacidade/',
-    'DISPLAY_MANIFEST'      => true
+    'DISPLAY_MANIFEST'      => false
   }.each do |key, value|
     item = InstallationConfig.find_or_initialize_by(name: key)
     item.value = value
